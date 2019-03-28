@@ -3,6 +3,7 @@
    border-radius: 50%;
     padding: 2em;
     text-align: center;
+    ;
 }
 .circle-2 {
     background-color: rgb(230,157,45);
@@ -13,7 +14,7 @@
 .circle-3 {
     background-color: #7Cb06c;
     border-radius: 50%;
-    padding: 2em;
+    padding: 2em 1em;
     text-align: center;
 }
 .circle-4 {
