@@ -1,25 +1,45 @@
 .circle-1 {
    background-color: #e6563b;
-   border-radius: 50%;
-    padding: 2em;
+    border-radius: 50%;
+    border: 10px solid white;
+
     text-align: center;
-    ;
+
+    height: 160px;
+    width: 160px;
 }
 .circle-2 {
     background-color: rgb(230,157,45);
     border-radius: 50%;
-    padding: 2em;
+    border: 10px solid white;
+
     text-align: center;
+
+    height: 160px;
+    width: 160px;
 }
 .circle-3 {
     background-color: #7Cb06c;
     border-radius: 50%;
-    padding: 2em 1em;
+    border: 10px solid white;
+
     text-align: center;
+
+    height: 160px;
+    width: 160px;
 }
 .circle-4 {
     background-color: #00ABA9;
     border-radius: 50%;
-    padding: 2em;
+    border: 10px solid white;
+
     text-align: center;
+
+    height: 160px;
+    width: 160px;}
+.iconw {
+line-height: 3.3}
+
+body {
+background-color: lightgray;
 }
