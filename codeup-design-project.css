@@ -6,6 +6,13 @@
     width: 160px;
 }
 
+.smcircle {
+    border-radius: 50%;
+    text-align: center;
+    height: 18px;
+    width: 18px;
+}
+
 .red {background-color: #e6563b;}
 .yellow {background-color: rgb(230,157,45);}
 .green {background-color: #7Cb06c;}
