@@ -6,13 +6,34 @@
     width: 160px;
 }
 
-.smcircle {
+.smcircle-red {
     border-radius: 50%;
     text-align: center;
+    border: 1px solid #e6563b;;
     height: 18px;
     width: 18px;
 }
-
+.smcircle-yellow {
+    border-radius: 50%;
+    text-align: center;
+    border: 1px solid rgb(230,157,45);
+    height: 18px;
+    width: 18px;
+}
+.smcircle-green {
+    border-radius: 50%;
+    text-align: center;
+    border: 1px solid #7Cb06c;
+    height: 18px;
+    width: 18px;
+}
+.smcircle-blue {
+    border-radius: 50%;
+    text-align: center;
+    border: 1px solid #00ABA9;
+    height: 18px;
+    width: 18px;
+}
 .red {background-color: #e6563b;}
 .yellow {background-color: rgb(230,157,45);}
 .green {background-color: #7Cb06c;}
