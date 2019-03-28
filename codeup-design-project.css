@@ -1,0 +1,24 @@
+.circle-1 {
+   background-color: #e6563b;
+   border-radius: 50%;
+    padding: 2em;
+    text-align: center;
+}
+.circle-2 {
+    background-color: rgb(230,157,45);
+    border-radius: 50%;
+    padding: 2em;
+    text-align: center;
+}
+.circle-3 {
+    background-color: #7Cb06c;
+    border-radius: 50%;
+    padding: 2em;
+    text-align: center;
+}
+.circle-4 {
+    background-color: #00ABA9;
+    border-radius: 50%;
+    padding: 2em;
+    text-align: center;
+}
