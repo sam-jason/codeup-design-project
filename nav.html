@@ -10,13 +10,13 @@
 <body>
 
 <header>
-    <div class="bg-white">
-        <img src="images/logo.jpg" alt="">
+    <div class="d-flex justify-content-center">
+        <img  src="images/logo.jpg" alt="">
     </div>
 </header>
 
 <nav class="  navbar-expand-lg navbar-expand-md navbar-expand-sm navbar-expand-xs navbar-light bg-light">
-        <div>
+    <div>
 
         <ul class="navbar-nav mr-auto d-flex justify-content-around">
             <li class="nav-item active">
@@ -40,25 +40,76 @@
 
 <div class="container">
     <div class="row">
-        <figure class="figure col-6">
+        <figure id="slide-1" class="figure col-xs-12 col-sm-6 col-md-6 col-lg-6">
             <img src="images/apple-ipad.jpg" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
-            <p>FEATURED PROJECT <span class="badge badge-pill  badge-danger">D</span></p>
+            <p>FEATURED PROJECT
+                <span class="smcircle-red red">D</span>
+                <span class="smcircle-yellow yellow">D</span>
+                <span class="smcircle-green green">S</span>
+                <span class="smcircle-blue blue">H</span>
+            </p>
         </figure>
-        <figure class="figure col-6">
+        <figure id="slide-2" class="figure col-xs-12 col-sm-6 col-md-6 col-lg-6">
             <img src="images/macbook.jpg" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
             <p>FEATURED PROJECT <span class="badge badge-pill  badge-danger">D</span></p>
         </figure>
-        <figure class="figure col-6">
+        <figure id="slide-3" class="figure col-xs-12 col-sm-6 col-md-6 col-lg-6">
             <img src="images/man.jpg" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
             <p>FEATURED PROJECT <span class="badge badge-pill  badge-danger">D</span></p>
         </figure>
-        <figure class="figure col-6">
+        <figure id="slide-4" class="figure col-xs-12 col-sm-6 col-md-6 col-lg-6">
             <img src="images/security.jpg" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
             <p>FEATURED PROJECT <span class="badge badge-pill  badge-danger">D</span></p>
         </figure>
     </div>
 </div>
 
+
+<script>
+
+   /* function myFunction(g) {
+        if (g.matches) { // If media query matches
+
+            /!*} else {
+            document.body.style.backgroundColor = "pink";
+        }
+    }*!/
+            var slideIndex = 0;
+            carousel();
+
+
+            function carousel() {
+                var i;
+                var slide1 = document.getElementById("slide-1");
+                var slide2 = document.getElementById("slide-2");
+                var slide3 = document.getElementById("slide-3");
+                var slide4 = document.getElementById("slide-4");
+                let x = [];
+                x.push(slide1, slide2, slide3, slide4);
+
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                slideIndex++;
+                if (slideIndex > x.length) {
+                    slideIndex = 1
+                }
+                x[slideIndex - 1].style.display = "block";
+                setTimeout(carousel, 3000);
+            }
+        } else {
+            clearTimeout(myFunction());
+        }
+    }
+
+            var g = window.matchMedia("(max-width: 576px)")
+            myFunction(g); // Call listener function at run time
+            g.addEventListener(myFunction)
+*/
+    // Attach listener function on state changes
+
+
+</script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
