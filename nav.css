@@ -51,7 +51,7 @@
 }
 
 body {
-background-color: #f0f0f0;
+    background-color: #f0f0f0;
 }
 h1,h2,h3,h4,h5,h6 {
     font-family: Anton;
@@ -60,6 +60,11 @@ p {
     font-family: abel;
 }
 
+.logo-container {
+    background-color: white;
+    margin-top: 4em;
+    height: 75px;
+}
 
 #logo {
     height: 105px;

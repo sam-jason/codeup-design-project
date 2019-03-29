@@ -5,38 +5,49 @@
     <title>Nav</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-    <link rel="stylesheet" href="codeup-design-project.css">
+    <link rel="stylesheet" href="nav.css">
 </head>
 <body>
 
-<header>
-    <div class="d-flex justify-content-center">
-        <img class="bg-white"  src="images/logo.jpg" alt="">
+<!--<header>
+    <div class="row d-flex justify-content-center logo-container">
+        <img id="logo" class="bg-white"  src="images/logo.jpg" alt="">
     </div>
-</header>
+</header>-->
 
-<nav class="  navbar-expand-lg navbar-expand-md navbar-expand-sm navbar-expand-xs navbar-light bg-light">
-    <div>
+<div class="logo-container d-flex align-items-center mb-5">
+    <nav class="d-flex w-100 justify-content-around navbar-expand-lg navbar-expand-md navbar-expand-sm  navbar-light mt-5">
+        <div>
 
-        <ul class="navbar-nav mr-auto d-flex justify-content-around">
-            <li class="nav-item active">
-                <a class="nav-link" href="#">SERVICES <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">WORK</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">BLOG</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">CONTACT</a>
-            </li>
+            <ul class="navbar-nav mr-auto d-flex align-items-start justify-content-lg-between">
+                <li class="nav-item order-lg-1 order-sm-3 order-md-3">
+                    <img id="logo" class="d-flex align-self-start"  src="images/logo-removebg.png" alt="">
+                    <a>codeup design</a>
+                </li>
+
+                <li class="nav-item active order-lg-2 order-sm-1 order-md-1">
+                    <a class="nav-link" href="#">SERVICES <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item order-md-2 order-sm-2 order-lg-3">
+                    <a class="nav-link" href="#">WORK</a>
+                </li>
+
+                <li class="nav-item order-md-4 order-sm-4 order-lg-4">
+                    <a class="nav-link" href="#">BLOG</a>
+                </li>
+                <li class="nav-item order-md-5 order-sm-5 order-lg-5">
+                    <a class="nav-link" href="#">CONTACT</a>
+                </li>
 
 
-        </ul>
+            </ul>
+        </div>
 
-    </div>
 </nav>
+
+</div>
+
+
 
 <div class="container">
     <div class="row">
@@ -89,20 +100,21 @@
                     <div class="col p-0 smcircle-green green">S</div>
                     <div class="col p-0  smcircle-blue blue">H</div>
                 </div>
-            </div>        </figure>
+            </div>
+        </figure>
     </div>
 </div>
 
 
 <script>
 
-   /* function myFunction(g) {
+    function myFunction(g) {
         if (g.matches) { // If media query matches
 
-            /!*} else {
+            /*} else {
             document.body.style.backgroundColor = "pink";
         }
-    }*!/
+    }*/
             var slideIndex = 0;
             carousel();
 
@@ -133,8 +145,7 @@
 
             var g = window.matchMedia("(max-width: 576px)")
             myFunction(g); // Call listener function at run time
-            g.addEventListener(myFunction)
-*/
+            g.addListener(myFunction())
     // Attach listener function on state changes
 
 
