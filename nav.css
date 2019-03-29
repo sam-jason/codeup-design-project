@@ -63,10 +63,46 @@ p {
 .logo-container {
     background-color: white;
     margin-top: 4em;
-    height: 75px;
+    height: 60px;
+    line-height: 75px;
+}
+
+img {
+    /*margin-top: 2em;*/
 }
 
 #logo {
     height: 105px;
     width: 105px;
 }
+
+.header-bg {
+    height: 60px;
+}
+
+li {
+
+    line-height: 60px;
+}
+
+.lh-60{
+    position: relative;
+    bottom: 21px;
+}
+
+
+
+.down {
+    margin-top: .5em;
+}
+
+@media screen and (max-width: 576px){
+    .hide-on-mobile{
+        display: none;
+    }
+    .logo-container {
+       background-color: transparent;
+
+    }
+}
+
