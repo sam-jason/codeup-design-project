@@ -51,7 +51,7 @@
 
 <div class="container">
     <div class="row">
-        <figure id="slide-1" class="figure col-xs-12 col-sm-6 col-md-6 col-lg-6">
+        <figure id="slide-1"  class="figure col-xs-12 col-sm-6 col-md-6 col-lg-6">
             <img src="images/apple-ipad.jpg" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
             <div class="row">
                 <p class="col-6 ml-3 p-0">FEATURED PROJECT</p>
@@ -65,7 +65,7 @@
             </div>
 
         </figure>
-        <figure id="slide-2" class="figure col-xs-12 col-sm-6 col-md-6 col-lg-6">
+        <figure id="slide-2"  class="figure col-xs-12 col-sm-6 col-md-6 col-lg-6">
             <img src="images/macbook.jpg" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
             <div class="row">
                 <p class="col-6 ml-3 p-0">FEATURED PROJECT</p>
@@ -77,7 +77,7 @@
                     <div class="col p-0  smcircle-blue blue">H</div>
                 </div>
             </div>        </figure>
-        <figure id="slide-3" class="figure col-xs-12 col-sm-6 col-md-6 col-lg-6">
+        <figure id="slide-3"  class="figure col-xs-12 col-sm-6 col-md-6 col-lg-6">
             <img src="images/man.jpg" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
             <div class="row">
                 <p class="col-6 ml-3 p-0">FEATURED PROJECT</p>
@@ -89,7 +89,7 @@
                     <div class="col p-0  smcircle-blue blue">H</div>
                 </div>
             </div>        </figure>
-        <figure id="slide-4" class="figure col-xs-12 col-sm-6 col-md-6 col-lg-6">
+        <figure id="slide-4"  class="figure col-xs-12 col-sm-6 col-md-6 col-lg-6">
             <img src="images/security.jpg" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
             <div class="row">
                 <p class="col-6 ml-3 p-0">FEATURED PROJECT</p>
@@ -107,14 +107,13 @@
 
 
 <script>
-
-    function myFunction(g) {
+/*    function myFunction(g) {
         if (g.matches) { // If media query matches
 
-            /*} else {
+            /!*} else {
             document.body.style.backgroundColor = "pink";
         }
-    }*/
+    }*!/
             var slideIndex = 0;
             carousel();
 
@@ -139,14 +138,84 @@
                 setTimeout(carousel, 3000);
             }
         } else {
-            clearTimeout(myFunction());
+            var i;
+            var slide1 = document.getElementById("slide-1");
+            var slide2 = document.getElementById("slide-2");
+            var slide3 = document.getElementById("slide-3");
+            var slide4 = document.getElementById("slide-4");
+            let x = [];
+            x.push(slide1,slide2,slide3,slide4);
+            for (i=0; i < x.length; i++) {
+                x[i].style.display= "block";
+            } clearTimeout(carousel)
         }
     }
 
-            var g = window.matchMedia("(max-width: 576px)")
-            myFunction(g); // Call listener function at run time
-            g.addListener(myFunction())
-    // Attach listener function on state changes
+
+    function reverse(h){
+        if (h.matches) {
+        function unCarousel() {
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "block";
+            }
+        }
+        }
+    }
+
+    var g = window.matchMedia("(max-width: 576px)")
+    myFunction(g); // Call listener function at run time
+    g.addListener(myFunction) */
+
+    if (matchMedia) {
+        const mq = window.matchMedia("(max-width: 576px)");
+        mq.addListener(WidthChange);
+        WidthChange(mq);
+    }
+
+    // media query change
+    function WidthChange(mq) {
+        if (mq.matches) {
+            var slideIndex = 1;
+            showDivs(slideIndex);
+
+            function plusDivs(n) {
+                showDivs(slideIndex += n);
+            }
+
+            function showDivs(n) {
+                var i;
+                var slide1 = document.getElementById("slide-1");
+                var slide2 = document.getElementById("slide-2");
+                var slide3 = document.getElementById("slide-3");
+                var slide4 = document.getElementById("slide-4");
+                let x = [];
+                x.push(slide1,slide2,slide3,slide4);
+
+
+                if (n>x.length) {
+                    slideIndex = 1
+                } else if (n < 1) {
+                    slideIndex = x.length
+                }
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display="none";
+                }
+                x[slideIndex-1].style.display="block";
+            }
+    } else {
+            var i;
+            var slide1 = document.getElementById("slide-1");
+            var slide2 = document.getElementById("slide-2");
+            var slide3 = document.getElementById("slide-3");
+            var slide4 = document.getElementById("slide-4");
+            let x = [];
+            x.push(slide1,slide2,slide3,slide4);
+            for (i=0; i < x.length; i++) {
+                x[i].style.display= "block";
+            }
+        }
+    }
+
 
 
 </script>
@@ -156,3 +225,14 @@
 
 </body>
 </html>
+
+
+<!--
+  var h = window.matchMedia("(min-width: 577px)");
+
+            reverse(h);
+            h.addListener(reverse)
+
+
+    // Attach listener function on state changes
+    -->
