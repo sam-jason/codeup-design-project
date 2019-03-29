@@ -27,7 +27,7 @@
 }
 @media (max-width: 574px){
     .circle-holder {
-        width: 79%;
+        width: 79R%;
         margin: auto;
     }
 }
@@ -95,7 +95,7 @@ p,a,.abel {
 #logo {
     height: 105px;
     width: 105px;
-}
+
 
 a:link {
     color: black;
