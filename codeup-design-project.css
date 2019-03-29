@@ -19,7 +19,7 @@
     margin: 1em 0em;
     padding: 0px;
 }
-@media (min-width: 576px){
+@media (min-width: 574px){
   .circle-holder {
       width: 80%;
       margin: auto;
@@ -128,7 +128,7 @@ a:hover {
         margin-top: 1em;
     }
 }
-@media screen and (max-width: 576px){
+@media screen and (max-width: 575px){
     .hide-on-mobile{
         display: none;
         position: absolute;
