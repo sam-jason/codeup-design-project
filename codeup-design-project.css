@@ -105,6 +105,26 @@ p,a,.abel {
     width: 105px;
 }
 
+.logo-container {
+    background-color: white;
+    margin-top: 4em;
+    height: 60px;
+    line-height: 75px;
+}
+
+.header-bg {
+    height: 60px;
+}
+
+li {
+
+    line-height: 60px;
+}
+
+.lh-60{
+    position: relative;
+    bottom: 21px;
+}
 
 a:link {
     color: black;
@@ -112,4 +132,20 @@ a:link {
 a:hover {
     color: #4e555b;
 
+}
+
+@media screen and (max-width: 992px) {
+    .down {
+        margin-top: 1em;
+    }
+
+}
+@media screen and (max-width: 576px){
+    .hide-on-mobile{
+        display: none;
+    }
+    .logo-container {
+        background-color: transparent;
+
+    }
 }
