@@ -16,8 +16,24 @@
     text-align: center;
     height: 140px;
     width: 140px;
-    margin: 0em 1em 1em 1em;
+    margin: 1em 0em;
+    padding: 0px;
 }
+@media (min-width: 576px){
+  .circle-holder {
+      width: 80%;
+      margin: auto;
+  }
+}
+@media (max-width: 574px){
+    .circle-holder {
+        width: 79%;
+        margin: auto;
+    }
+}
+
+
+
 
 .smcircle-red {
     border-radius: 50%;
