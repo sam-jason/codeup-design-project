@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="codeup-design-project.css">
+
 </head>
 <body>
 
@@ -15,27 +17,68 @@
     </div>
 </header>-->
 
-<div class="logo-container d-flex align-items-center mb-5">
-    <nav class="d-flex w-100 justify-content-around navbar-expand-lg navbar-expand-md navbar-expand-sm  navbar-light mt-5">
+
+<!--
+<div class="bg-white header-bg d-block d-sm-none mt-2 d-flex align-items-center">
+    <img class="logo d-block lh-60 m-auto" src="images/logo.png" height="105px" width="105px" alt="Logo">
+</div>
+
+<h1 class="abel d-block d-sm-none text-center mt-4">Codeup Design</h1>
+
+
+&lt;!&ndash;NavBar was able to match photo by maaking it into column system&ndash;&gt;
+<nav class=" d-block d-sm-none  navbar-expand-lg navbar-expand-md navbar-expand-sm navbar-expand-xs ">
+    <div class="row">
+        <div class="col-2 p-0"></div>
+        <ul class="nav col p-0 justify-content-around form-inline">
+            <li class="nav-item active">
+                <a class="navlist nav-link p-0" href="#">SERVICES <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="navlist nav-link p-0" href="#">WORK</a>
+            </li>
+            <li class="nav-item">
+                <a class="navlist nav-link p-0" href="#">BLOG</a>
+            </li>
+            <li class="nav-item">
+                <a class="navlist nav-link p-0" href="#">CONTACT</a>
+            </li>
+        </ul>
+        <div class="col-2 p-0"></div>
+    </div>
+</nav>-->
+<!--^mobile navbar  vlarger navbars-->
+
+<div class="logo-container hide-on-mobile d-flex align-items-center mb-5">
+    <nav class="d-flex w-100 mb-4 justify-content-around navbar-expand-lg navbar-expand-md navbar-expand-sm  navbar-light mt-5">
         <div>
 
-            <ul class="navbar-nav mr-auto d-flex align-items-start justify-content-lg-between">
-                <li class="nav-item order-lg-1 order-sm-3 order-md-3">
-                    <img id="logo" class="d-flex align-self-start"  src="images/logo-removebg.png" alt="">
-                    <a>codeup design</a>
+            <ul class="navbar-nav row mr-auto d-flex align-items-top justify-content-lg-between mt-5">
+
+
+                <li class="nav-item  order-lg-1 d-flex align-items-bottom  order-sm-3 order-md-3">
+                    <div class=>
+                    <div class=" header-bg  mt-3 d-flex align-items-center">
+                        <img class="logo d-block lh-60 m-auto" src="images/logo-removebg.png" height="105px" width="105px" alt="Logo">
+                        <h1 class="abel d-md-none d-sm-none d-lg-block d-xl-block text-center mt-5">Codeup Design</h1>
+                    </div>
+
+                    <h1 class="abel  d-md-block d-lg-none text-center mt-5">Codeup Design</h1>
+                    </div>
                 </li>
 
-                <li class="nav-item active order-lg-2 order-sm-1 order-md-1">
+
+                <li class="nav-item active order-lg-2 order-sm-1 order-md-1 down">
                     <a class="nav-link" href="#">SERVICES <span class="sr-only">(current)</span></a>
                 </li>
-                <li class="nav-item order-md-2 order-sm-2 order-lg-3">
+                <li class="nav-item order-md-2 order-sm-2 order-lg-3 down">
                     <a class="nav-link" href="#">WORK</a>
                 </li>
 
-                <li class="nav-item order-md-4 order-sm-4 order-lg-4">
+                <li class="nav-item order-md-4 order-sm-4 order-lg-4 down">
                     <a class="nav-link" href="#">BLOG</a>
                 </li>
-                <li class="nav-item order-md-5 order-sm-5 order-lg-5">
+                <li class="nav-item order-md-5 order-sm-5 order-lg-5 down">
                     <a class="nav-link" href="#">CONTACT</a>
                 </li>
 
@@ -51,7 +94,7 @@
 
 <div class="container">
     <div class="row">
-        <figure id="slide-1"  class="figure col-xs-12 col-sm-6 col-md-6 col-lg-6">
+        <figure id="slide-1"  class="mt-5 figure col-xs-12 col-sm-6 col-md-6 col-lg-6">
             <img src="images/apple-ipad.jpg" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
             <div class="row">
                 <p class="col-6 ml-3 p-0">FEATURED PROJECT</p>
@@ -65,7 +108,7 @@
             </div>
 
         </figure>
-        <figure id="slide-2"  class="figure col-xs-12 col-sm-6 col-md-6 col-lg-6">
+        <figure id="slide-2"  class="figure mt-5 col-xs-12 col-sm-6 col-md-6 col-lg-6">
             <img src="images/macbook.jpg" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
             <div class="row">
                 <p class="col-6 ml-3 p-0">FEATURED PROJECT</p>
@@ -104,6 +147,10 @@
         </figure>
     </div>
 </div>
+
+
+
+
 
 
 <script>
