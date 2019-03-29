@@ -1,10 +1,38 @@
+.logo {
+    z-index: 3;
+    margin: auto;
+}
+.whitestripe {
+    z-index: 1;
+    height: 50px;
+    background-color: white;
+    position: absolute;
+    top: 0px;
+}
 .circle {
     border-radius: 50%;
-    border: 10px solid white;
+    border: 7px solid white;
     text-align: center;
-    height: 160px;
-    width: 160px;
+    height: 140px;
+    width: 140px;
+    margin: 1em 0em;
+    padding: 0px;
 }
+@media (min-width: 575px){
+    .circle-holder {
+        width: 80%;
+        margin: auto;
+    }
+}
+@media (max-width: 575px){
+    .circle-holder {
+        width: 79%;
+        margin: auto;
+    }
+}
+
+
+
 
 .smcircle-red {
     border-radius: 50%;
@@ -13,6 +41,7 @@
     height: 17px;
     width: 17px;
     line-height: 1em;
+    font-size: 14px;
 }
 .smcircle-yellow {
     border-radius: 50%;
@@ -21,6 +50,7 @@
     height: 17px;
     width: 17px;
     line-height: 1em;
+    font-size: 14px;
 }
 .smcircle-green {
     border-radius: 50%;
@@ -29,6 +59,7 @@
     height: 17px;
     width: 17px;
     line-height: 1em;
+    font-size: 14px;
 }
 .smcircle-blue {
     border-radius: 50%;
@@ -37,6 +68,11 @@
     height: 17px;
     width: 17px;
     line-height: 1em;
+    font-size: 14px;
+}
+.cards {
+    width: 400px;
+    margin: auto;
 }
 .red {background-color: #e6563b;}
 .yellow {background-color: rgb(230,157,45);}
@@ -45,64 +81,59 @@
 
 .iconw {
     color: #f0f0f0;
-    line-height: 140px;
-    font-size: 40px;
+    line-height: 130px;
+    font-size: 32px;
     font-family: Anton;
 }
-
-body {
+body, .bkg {
     background-color: #f0f0f0;
 }
-h1,h2,h3,h4,h5,h6 {
+h1,h2,h3,h4,h5,h6, .Anton {
     font-family: Anton;
 }
-p {
+p,a,.abel {
+    color: black;
     font-family: abel;
-}
-
-.logo-container {
-    background-color: white;
-    margin-top: 4em;
-    height: 60px;
-    line-height: 75px;
-}
-
-img {
-    /*margin-top: 2em;*/
 }
 
 #logo {
     height: 105px;
     width: 105px;
 }
-
+.logo-container {
+    background-color: white;
+    margin-top: 4em;
+    height: 60px;
+    line-height: 75px;
+}
 .header-bg {
     height: 60px;
 }
-
 li {
-
     line-height: 60px;
 }
-
 .lh-60{
     position: relative;
     bottom: 21px;
 }
-
+a:link {
+    color: black;
+}
+a:hover {
+    color: #4e555b;
+}
 @media screen and (max-width: 992px) {
     .down {
         margin-top: 1em;
     }
-
 }
-@media screen and (max-width: 576px){
+@media screen and (max-width: 575px){
     .hide-on-mobile{
         display: none;
+        position: absolute;
+        top: -50px;
     }
     .logo-container {
-       background-color: transparent;
-
+        background-color: transparent;
     }
 }
-
