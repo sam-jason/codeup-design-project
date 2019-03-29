@@ -90,12 +90,12 @@ li {
     bottom: 21px;
 }
 
+@media screen and (max-width: 992px) {
+    .down {
+        margin-top: 1em;
+    }
 
-
-.down {
-    margin-top: .5em;
 }
-
 @media screen and (max-width: 576px){
     .hide-on-mobile{
         display: none;
