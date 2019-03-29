@@ -7,38 +7,39 @@
     <link href="https://fonts.googleapis.com/css?family=Abel|Anton" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-    <link rel="stylesheet" href="codeup-design-project.css">
     <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="codeup-design-project.css">
 </head>
 <body>
 <nav>
-
+<!--img and codeupheader, still needs white background-->
     <header>
-        <div class="bg-white">
-            <img src="images/logo.png" alt="">
+        <div class="">
+            <div class="whitestripe"></div>
+            <img class="logo d-block m-auto" src="images/logo.png" height="105px" width="105px" alt="Logo">
         </div>
+        <h1 class="abel text-center">Codeup Design</h1>
     </header>
 
-    <nav class="  navbar-expand-lg navbar-expand-md navbar-expand-sm navbar-expand-xs navbar-light bg-light">
-        <div>
-
-            <ul class="navbar-nav mr-auto d-flex justify-content-around">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">SERVICES <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">WORK</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">BLOG</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">CONTACT</a>
-                </li>
-
-
-            </ul>
-
+<!--NavBar was able to match photo by maaking it into column system-->
+    <nav class="  navbar-expand-lg navbar-expand-md navbar-expand-sm navbar-expand-xs ">
+        <div class="row">
+            <div class="col-2 p-0"></div>
+                <ul class="nav col p-0 justify-content-around form-inline">
+                    <li class="nav-item active">
+                        <a class="navlist nav-link p-0" href="#">SERVICES <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="navlist nav-link p-0" href="#">WORK</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="navlist nav-link p-0" href="#">BLOG</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="navlist nav-link p-0" href="#">CONTACT</a>
+                    </li>
+                </ul>
+            <div class="col-2 p-0"></div>
         </div>
     </nav>
 
@@ -46,10 +47,11 @@
 
 
     <!--jumbotron-->
-    <div class="jumbotron jumbotron-fluid text-center">
+    <div class="jumbotron jumbotron-fluid bkg text-center">
         <div class="container-fluid">
-                <h1 class="">VISUAL DESIGN & WEB DEVELOPMENT</h1>
-            <h2 class="lead">FROM PARK CITY, UTAH</h2>
+            <h1 class="Anton">VISUAL DESIGN & WEB DEVELOPMENT</h1>
+                <br>
+            <h2 class="Anton">FROM PARK CITY, UTAH</h2>
         </div>
     </div>
 
@@ -57,10 +59,10 @@
     <div class="container">
         <div class="row justify-content-around">
 
-                <div class="circle red col-xs-6 m-1"><h2 class="iconw">DESIGN</h2></div>
-                <div class="circle yellow col-xs-6 m-1"><h2 class="iconw">DEVELOP</h2></div>
-                <div class="circle green col-xs-6 m-1"><h2 class="iconw">SUPPORT</h2></div>
-                <div class="circle blue col-xs-6 m-1"><h2 class="iconw">HOST</h2></div>
+                <div class="circle red col-xs-6"><h2 class="iconw">DESIGN</h2></div>
+                <div class="circle yellow col-xs-6"><h2 class="iconw">DEVELOP</h2></div>
+                <div class="circle green col-xs-6"><h2 class="iconw">SUPPORT</h2></div>
+                <div class="circle blue col-xs-6"><h2 class="iconw">HOST</h2></div>
 
         </div>
     </div>

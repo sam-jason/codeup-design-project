@@ -1,9 +1,22 @@
+
+.logo {
+    z-index: 3;
+    margin: auto;
+}
+.whitestripe {
+    z-index: 1;
+    height: 50px;
+    background-color: white;
+    position: absolute;
+    top: 0px;
+}
 .circle {
     border-radius: 50%;
     border: 10px solid white;
     text-align: center;
     height: 160px;
     width: 160px;
+    margin: 0em 1em 1em 1em;
 }
 
 .smcircle-red {
@@ -50,12 +63,20 @@
     font-family: Anton;
 }
 
-body {
-background-color: #e6e6e6;
+body, .bkg {
+background-color: #f0f0f0;
 }
-h1,h2,h3,h4,h5,h6 {
+h1,h2,h3,h4,h5,h6, .Anton {
     font-family: Anton;
 }
-p {
+p,a,.abel {
+    color: black;
     font-family: abel;
+}
+a:link {
+    color: black;
+}
+a:hover {
+    color: #4e555b;
+
 }
