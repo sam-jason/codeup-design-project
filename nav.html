@@ -89,9 +89,18 @@
 
 </div>
 
+<div class="m-5 pt-5">
+
+<hr class="m-5">
+
+</div>
+
 
 
 <div class="container">
+    <div>
+    <p>SELECTED WORK</p>
+    </div>
     <div class="row">
         <figure id="slide-1"  class="mt-5 figure col-xs-12 col-sm-6 col-md-6 col-lg-6">
             <img src="images/apple-ipad.jpg" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
@@ -148,18 +157,21 @@
 </div>
 
 
+<div class="container">
 
+
+</div>
 
 
 
 <script>
-/*    function myFunction(g) {
+    /*function myFunction(g) {
         if (g.matches) { // If media query matches
 
-            /!*} else {
+            /*} else {
             document.body.style.backgroundColor = "pink";
         }
-    }*!/
+    }* /
             var slideIndex = 0;
             carousel();
 
@@ -198,21 +210,12 @@
     }
 
 
-    function reverse(h){
-        if (h.matches) {
-        function unCarousel() {
-            for (i = 0; i < x.length; i++) {
-                x[i].style.display = "block";
-            }
-        }
-        }
-    }
 
     var g = window.matchMedia("(max-width: 576px)")
     myFunction(g); // Call listener function at run time
-    g.addListener(myFunction) */
+    g.addListener(myFunction)*/
 
-    if (matchMedia) {
+   if (matchMedia) {
         const mq = window.matchMedia("(max-width: 576px)");
         mq.addListener(WidthChange);
         WidthChange(mq);
