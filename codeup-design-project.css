@@ -143,6 +143,8 @@ a:hover {
 @media screen and (max-width: 576px){
     .hide-on-mobile{
         display: none;
+        position: absolute;
+        top: -50px;
     }
     .logo-container {
         background-color: transparent;
