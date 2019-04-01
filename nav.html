@@ -89,7 +89,7 @@
 <!--jumbotron-->
 <div class="jumbotron jumbotron-fluid bkg text-center">
     <div class="container-fluid">
-        <h1 class="Anton">VISUAL DESIGN & WEB DEVELOPMENT</h1>
+        <h1 class="Anton">VISUAL DESIGN &<br class="d-block d-sm-none"> WEB DEVELOPMENT</h1>
         <br>
         <h2 class="Anton">FROM PARK CITY, UTAH</h2>
     </div>
@@ -113,9 +113,10 @@
 
 
     <div class="row ">
-        <div class="col-lg-8  row">
+        <div class="col-lg-8 col-md-8 row">
             <div class="col-12 d-flex justify-content-lg-start justify-content-center"><p class="abel ">SELECTED WORK</p></div>
-            <figure id="slide-1"  class="cards mt-5 figure col-xs-12 col-sm-6 col-md-6 col-lg-6">
+
+            <figure id="slide-1"  class="cards mt-5 mt-xl-4 mt-md-0 figure col-xs-12 col-sm-6 col-md-6 col-lg-6">
                 <img src="images/apple-ipad.jpg" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
                 <div class="row">
                     <p class="col-6 ml-3 p-0">FEATURED PROJECT</p>
@@ -129,7 +130,7 @@
                 </div>
 
             </figure>
-            <figure id="slide-2"  class="cards figure mt-5 d-none d-sm-block col-xs-12 col-sm-6 col-md-6 col-lg-6">
+            <figure id="slide-2"  class="cards figure mt-5 mt-xl-4 mt-md-0 d-none d-sm-block col-xs-12 col-sm-6 col-md-6 col-lg-6">
                 <img src="images/macbook.jpg" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
                 <div class="row">
                     <p class="col-6 ml-3 p-0">FEATURED PROJECT</p>
@@ -141,7 +142,7 @@
                         <div class="col p-0 smcircle-blue   blue">H</div>
                     </div>
                 </div>        </figure>
-            <figure id="slide-3"  class="cards figure d-none d-sm-block col-xs-12 col-sm-6 col-md-6 col-lg-6">
+            <figure id="slide-3"  class="cards figure d-none mt-md-0 d-sm-block col-xs-12 col-sm-6 col-md-6 col-lg-6">
                 <img src="images/man.jpg" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
                 <div class="row">
                     <p class="col-6 ml-3 p-0">FEATURED PROJECT</p>
@@ -153,7 +154,7 @@
                         <div class="col p-0  smcircle-blue   blue">H</div>
                     </div>
                 </div>        </figure>
-            <figure id="slide-4"  class="cards figure d-none d-sm-block col-xs-12 col-sm-6 col-md-6 col-lg-6">
+            <figure id="slide-4"  class="cards figure d-none mt-md-0 d-sm-block col-xs-12 col-sm-6 col-md-6 col-lg-6">
                 <img src="images/security.jpg" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
                 <div class="row">
                     <p class="col-6 ml-3 p-0">FEATURED PROJECT</p>
@@ -167,19 +168,19 @@
                 </div>
             </figure>
         </div>
-        <div class="row col-4 pr-0 ml-2 d-none d-lg-block">
+        <div class="row col-4 pr-0 ml-2 d-none  d-md-block">
             <p>THE LAST</p>
             <br>
-            <br>
-            <br class="d-none d-lg-block d-xl-none">
+            <br class="d-none d-md-block d-lg-none">
+            <br class="d-none  d-md-block d-lg-none d-xl-none">
 
-            <div class="col-12 row  pr-0 mb-5">
-                <img class="col-3 p-0 mt-lg-2 mt-xl-0 rounded" src="images/mobile-phone.jpg"height="60"> <h4 class="col-9 mt-xl-0 mt-lg-2 p-0">THE ADMIN BAR AND ABSOLUTE POSITIONING</h4>
+            <div class="col-12 row  pr-0 mb-md-1 mb-lg-5">
+                <img class="col-3 p-0 mt-lg-2 mt-md-0 mt-xl-0 rounded" src="images/mobile-phone.jpg"height="60"> <h4 class="col-9 mt-xl-0 mt-lg-2 p-0">THE ADMIN BAR AND ABSOLUTE POSITIONING</h4>
             </div>
-            <div class="col-12 row pr-0  mb-5">
+            <div class="col-12 row pr-0 mb-md-1 mb-lg-5">
                 <img class="col-3 p-0 rounded" src="images/head.jpg"height="60px"><H4 class="col-9 pr-0">NIBBLER AWESOME WEBSITE TESTING</H4><BR>
             </div>
-            <div class="col-12 row pr-0 mb-5">
+            <div class="col-12 row pr-0 mb-md-1 mb-lg-5">
                 <img class="col-3 p-0 rounded" src="images/ipad.jpg"height="60px"><H4 class="col-9 pr-0">HOW TO GET GOOGLE TO LIKE YOU</H4>
             </div>
             <div class="col-12"><img src="images/Twitter.png"     class="pr-3" height="30px" <p>LAST TWEET</p></div>
@@ -190,6 +191,62 @@
 </div>
 
 
+<script>
+    /*function myFunction(g) {
+        if (g.matches) { // If media query matches
+
+            /*} else {
+            document.body.style.backgroundColor = "pink";
+        }
+    } * /
+            var slideIndex = 0;
+            carousel();
+
+
+            function carousel() {
+                var i;
+                var slide1 = document.getElementById("slide-1");
+                var slide2 = document.getElementById("slide-2");
+                var slide3 = document.getElementById("slide-3");
+                var slide4 = document.getElementById("slide-4");
+                let x = [];
+                x.push(slide1, slide2, slide3, slide4);
+
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                slideIndex++;
+                if (slideIndex > x.length) {
+                    slideIndex = 1
+                }
+                x[slideIndex - 1].style.display = "block";
+                setTimeout(carousel, 3000);
+            }
+        } else {
+            var i;
+            var slide1 = document.getElementById("slide-1");
+            var slide2 = document.getElementById("slide-2");
+            var slide3 = document.getElementById("slide-3");
+            var slide4 = document.getElementById("slide-4");
+            let x = [];
+            x.push(slide1,slide2,slide3,slide4);
+            for (i=0; i < x.length; i++) {
+                x[i].style.display= "block";
+            } clearTimeout(carousel)
+        }
+    }
+
+
+
+    var g = window.matchMedia("(max-width: 576px)")
+    myFunction(g); // Call listener function at run time
+    g.addListener(myFunction)
+
+    if (matchMedia) {
+        const mq = window.matchMedia("(max-width: 576px)");
+        mq.addListener(WidthChange);
+        WidthChange(mq);
+    }*/
 
 
 
@@ -234,10 +291,10 @@ Sam: - circle problems -a
 
 
 Jason:
-       -codeup moveup on small
-       -right column on medium
-       -fix jumbotron words on xs
-       -navbar wider on md
+       x-codeup moveup on small
+       x-right column on medium
+       x-fix jumbotron words on xs
+       x-navbar wider on md
 
 
 
