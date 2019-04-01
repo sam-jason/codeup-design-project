@@ -16,65 +16,74 @@
     text-align: center;
     height: 140px;
     width: 140px;
-    margin: 1em 0em;
-    padding: 0px;
+    margin: 1em 0;
+    padding: 0;
 }
-@media (min-width: 575px){
-  .circle-holder {
-      width: 80%;
-      margin: auto;
-  }
-}
-@media (max-width: 575px){
+@media (min-width: 661px) and (max-width: 767px) {
     .circle-holder {
-        width: 79%;
+        width: 57%;
         margin: auto;
     }
 }
+@media (min-width: 576px) and (max-width: 660px) {
+    .circle-holder {
+        width: 57%;
+        margin: auto;
+    }
+}
+@media (min-width: 520px) and (max-width: 575px) {
+    .circle-holder {
+        width: 70%;
+        margin: auto;
+    }
+}
+@media (min-width: 471px) and (max-width: 519px ) {
+    .circle-holder {
+        width: 88%;
+        margin: auto;
+    }
+}
+@media (min-width: 420px) and (max-width: 470px ) {
+    .circle-holder {
+        width: 98%;
+        margin: auto;
+    }
+}
+/*@media (min-width: 575px){*/
+    /*.circle-holder {*/
+        /*width: 90%;*/
+        /*margin: auto;*/
+    /*}*/
+/*}*/
+
+.dots {
+    padding-left: 0;
+    padding-right: 30px;
+    width: 100px;
+    justify-content: flex-end;
+}
 
 
 
+.smcircle {
+    border-radius: 50%;
+    text-align: center;
+    height: 17px;
+    width: 17px;
+    line-height: 16px;
+    font-size: 12px;
 
-.smcircle-red {
-    border-radius: 50%;
-    text-align: center;
-    border: 1px solid #e6563b;;
-    height: 17px;
-    width: 17px;
-    line-height: 1em;
-    font-size: 14px;
 }
-.smcircle-yellow {
-    border-radius: 50%;
-    text-align: center;
-    border: 1px solid rgb(230,157,45);
-    height: 17px;
-    width: 17px;
-    line-height: 1em;
-    font-size: 14px;
-}
-.smcircle-green {
-    border-radius: 50%;
-    text-align: center;
-    border: 1px solid #7Cb06c;
-    height: 17px;
-    width: 17px;
-    line-height: 1em;
-    font-size: 14px;
-}
-.smcircle-blue {
-    border-radius: 50%;
-    text-align: center;
-    border: 1px solid #00ABA9;
-    height: 17px;
-    width: 17px;
-    line-height: 1em;
-    font-size: 14px;
-}
+
 .cards {
     width: 400px;
     margin: auto;
 }
+.smred {border: 1px solid #e6563b;;}
+.smyellow {border: 1px solid rgb(230,157,45);}
+.smgreen {border: 1px solid #7Cb06c;}
+.smblue {border: 1px solid #00ABA9;}
+
 .red {background-color: #e6563b;}
 .yellow {background-color: rgb(230,157,45);}
 .green {background-color: #7Cb06c;}
